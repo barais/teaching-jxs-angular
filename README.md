@@ -29,7 +29,7 @@ npm install -g @angular/cli
 
 ```bash
 # génération d'un nouveau projet
-ng new pokdemo
+ng new pokedemo
 cd pokedemo
 ```
 
@@ -86,7 +86,7 @@ Vous constaterez que ng-cli génère automatiquement une structure pour vous ave
 Créer un composant avec un élément *&lt;input>* afin de récupérer l'id recherché. Ajouter votre
 composant à la liste des directives et au template du composant *my-component*.
 
-Charger ce composant en ahjoutant le selector de ce composant dans le template du composant *app.component.html*
+Charger ce composant en ajoutant le selector de ce composant dans le template du composant *app.component.html*
 
 ```html
 <app-my-component></app-my-component>
@@ -199,8 +199,8 @@ Tout d'abord créons un *pipe*.
 ng g pipe filter-pokemon--pipe
 ```
 
-dans la classe généré pour le pipe, vous verrez ce filtre
-prend deux paramètres : le nom de l’attribut à filtrer et la valeur à rechercher. La fonction transforme ressemblera à cela. 
+dans la classe générée pour le pipe, vous verrez ce filtre
+prend deux paramètres : le nom de l’attribut à filtrer et la valeur à rechercher. La fonction *transform* ressemblera à cela. 
 
 ```ts
   transform(value: any[], property?: string, searchString?: string): any {
@@ -315,7 +315,7 @@ d'informations.
 Créer un service contenant l'id du pokémon recherché. Injecter ce service dans le composant de
 recherche et le composant d'affichage des informations. On n'oublira pas de l'ajouter dans les providers
 du module AppModule.
-Les deux composants ont maintenant un service pour partager des informations liés et utilisent les
+Les deux composants ont maintenant un service pour partager des informations liées et utilisent les
 mêmes informations. Cependant, les informations du pokémon ne sont pas mises à jour si le dresseur
 change le numéro ou le nom du pokémon recherché. Pour détecter les changements de ces deux
 attributs, nous allons utiliser la notion d'observable.
