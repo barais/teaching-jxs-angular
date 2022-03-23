@@ -164,7 +164,7 @@ Créer un deuxième champs input en mode readonly et lié les deux par un id.  A
 
 Expliquer pourquoi il devient difficile de faire une attaque XSS sur une application angular
 
-[lien](https://ripcordsystems.com/2019/03/09/angular-how-to-prevent-xss-attacks-code-examples/)
+[lien](https://vitalflux.com/angular-prevent-xss-attacks-code-examples/)
 
 
 ## Recherche dans une liste
