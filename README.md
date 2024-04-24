@@ -263,7 +263,7 @@ l'API, nous allons nous même créer un service. Un service Angular est en fait 
 Créer un service pour gérer l'accès à PokéAPI.
 
 ```bash
-ng generate service
+ng generate service poke-api
 ```
 
 Ajouter un paramètre à son constructeur afin de récupérer le service http. Ajouter aussi l'annotation *@Injectable()* afin de
