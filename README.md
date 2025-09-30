@@ -44,14 +44,14 @@ cd pokedemo
 ng serve
 ```
 
-Observez bien le squelette du projet généré. Il vient avec un point d'entrée (main.ts) et le fichier index.html racine. Ce dernier charge un composant sous la directive (selector) *&lt;app-root>&lt;/app-root>*. Cette directive demande l'instantiation d'un composant *app* défini dans le répertoire *app*. Ce composant est défini par une classe *app.component.ts*, un template *app.component.html*, une classe de test *app.component.spec.ts*, un fichier de définition de module *app.module.html* et un fichier de style *app.component.css*. 
+Observez bien le squelette du projet généré. Il vient avec un point d'entrée (main.ts) et le fichier index.html racine. Ce dernier charge un composant sous la directive (selector) *&lt;app-root>&lt;/app-root>*. Cette directive demande l'instantiation d'un composant *app* défini dans le répertoire *app*. Ce composant est défini par une classe *app.component.ts*, un template *app.html*, une classe de test *app.spec.ts*et un fichier de style *app.css*. 
 
-Changez le template *app-component.html* en remplaçant le code du template par  les lignes suivantes. Vous constaterez que l'application est rechargée automatiquement. 
+Changez le template *app.html* en remplaçant le code du template par  les lignes suivantes. Vous constaterez que l'application est rechargée automatiquement. 
 
 ```html
 <div style="text-align:center">
   <h1>
-   {{ title }}!
+   {{ title() }}!
   </h1>
 </div>
 ```
